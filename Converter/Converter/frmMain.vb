@@ -3,7 +3,7 @@
 Public Class frmMain
 
     Private Sub frmMain_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        stripAlert.Text = "HINT: Press enter after entering number."
+        stripAlert.Text = "(Press enter after entering number.)"
         menuInchtoCm.Checked = True
 
         Me.Location = New Point(Screen.PrimaryScreen.WorkingArea.Width - Me.Width, Screen.PrimaryScreen.WorkingArea.Height - Me.Height)
