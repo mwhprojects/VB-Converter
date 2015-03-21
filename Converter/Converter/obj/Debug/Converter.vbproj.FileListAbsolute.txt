@@ -1,0 +1,10 @@
+d:\documents\visual studio 2013\Projects\Converter\Converter\bin\Debug\Converter.exe.config
+d:\documents\visual studio 2013\Projects\Converter\Converter\bin\Debug\Converter.exe
+d:\documents\visual studio 2013\Projects\Converter\Converter\bin\Debug\Converter.pdb
+d:\documents\visual studio 2013\Projects\Converter\Converter\bin\Debug\Converter.xml
+d:\documents\visual studio 2013\Projects\Converter\Converter\obj\Debug\Converter.frmMain.resources
+d:\documents\visual studio 2013\Projects\Converter\Converter\obj\Debug\Converter.Resources.resources
+d:\documents\visual studio 2013\Projects\Converter\Converter\obj\Debug\Converter.vbproj.GenerateResource.Cache
+d:\documents\visual studio 2013\Projects\Converter\Converter\obj\Debug\Converter.exe
+d:\documents\visual studio 2013\Projects\Converter\Converter\obj\Debug\Converter.xml
+d:\documents\visual studio 2013\Projects\Converter\Converter\obj\Debug\Converter.pdb
