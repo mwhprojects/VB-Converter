@@ -24,6 +24,9 @@ Partial Class frmMain
     Private Sub InitializeComponent()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.menuFile = New System.Windows.Forms.ToolStripMenuItem()
+        Me.menuPlaceinCorner = New System.Windows.Forms.ToolStripMenuItem()
+        Me.menuShowHistory = New System.Windows.Forms.ToolStripMenuItem()
+        Me.menuClearSavedData = New System.Windows.Forms.ToolStripMenuItem()
         Me.menuStayonTop = New System.Windows.Forms.ToolStripMenuItem()
         Me.menuExit = New System.Windows.Forms.ToolStripMenuItem()
         Me.menuConversion = New System.Windows.Forms.ToolStripMenuItem()
@@ -54,27 +57,45 @@ Partial Class frmMain
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.menuFile, Me.menuConversion})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(212, 24)
+        Me.MenuStrip1.Size = New System.Drawing.Size(214, 24)
         Me.MenuStrip1.TabIndex = 0
         Me.MenuStrip1.Text = "MenuStrip1"
         '
         'menuFile
         '
-        Me.menuFile.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.menuStayonTop, Me.menuExit})
+        Me.menuFile.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.menuPlaceinCorner, Me.menuShowHistory, Me.menuClearSavedData, Me.menuStayonTop, Me.menuExit})
         Me.menuFile.Name = "menuFile"
         Me.menuFile.Size = New System.Drawing.Size(37, 20)
         Me.menuFile.Text = "File"
         '
+        'menuPlaceinCorner
+        '
+        Me.menuPlaceinCorner.Name = "menuPlaceinCorner"
+        Me.menuPlaceinCorner.Size = New System.Drawing.Size(248, 22)
+        Me.menuPlaceinCorner.Text = "Place in Corner"
+        '
+        'menuShowHistory
+        '
+        Me.menuShowHistory.Name = "menuShowHistory"
+        Me.menuShowHistory.Size = New System.Drawing.Size(248, 22)
+        Me.menuShowHistory.Text = "Show History and Saved Window"
+        '
+        'menuClearSavedData
+        '
+        Me.menuClearSavedData.Name = "menuClearSavedData"
+        Me.menuClearSavedData.Size = New System.Drawing.Size(248, 22)
+        Me.menuClearSavedData.Text = "Clear Saved Program Data"
+        '
         'menuStayonTop
         '
         Me.menuStayonTop.Name = "menuStayonTop"
-        Me.menuStayonTop.Size = New System.Drawing.Size(137, 22)
+        Me.menuStayonTop.Size = New System.Drawing.Size(248, 22)
         Me.menuStayonTop.Text = "Stay on Top"
         '
         'menuExit
         '
         Me.menuExit.Name = "menuExit"
-        Me.menuExit.Size = New System.Drawing.Size(137, 22)
+        Me.menuExit.Size = New System.Drawing.Size(248, 22)
         Me.menuExit.Text = "Exit"
         '
         'menuConversion
@@ -93,7 +114,7 @@ Partial Class frmMain
         'menuMilstoMm
         '
         Me.menuMilstoMm.Name = "menuMilstoMm"
-        Me.menuMilstoMm.Size = New System.Drawing.Size(183, 22)
+        Me.menuMilstoMm.Size = New System.Drawing.Size(199, 22)
         Me.menuMilstoMm.Text = "Mils <-> Millimetres"
         '
         'panelIntoCm
@@ -107,7 +128,7 @@ Partial Class frmMain
         Me.panelIntoCm.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.panelIntoCm.Location = New System.Drawing.Point(0, 24)
         Me.panelIntoCm.Name = "panelIntoCm"
-        Me.panelIntoCm.Size = New System.Drawing.Size(212, 66)
+        Me.panelIntoCm.Size = New System.Drawing.Size(214, 65)
         Me.panelIntoCm.TabIndex = 4
         '
         'Label6
@@ -118,7 +139,7 @@ Partial Class frmMain
         Me.Label6.ForeColor = System.Drawing.Color.White
         Me.Label6.Location = New System.Drawing.Point(0, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(212, 20)
+        Me.Label6.Size = New System.Drawing.Size(214, 20)
         Me.Label6.TabIndex = 5
         Me.Label6.Text = "Inches to Centimetres"
         Me.Label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -135,7 +156,7 @@ Partial Class frmMain
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(147, 23)
+        Me.Label2.Location = New System.Drawing.Point(149, 23)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(62, 13)
         Me.Label2.TabIndex = 3
@@ -151,7 +172,7 @@ Partial Class frmMain
         '
         'txtCentimetres
         '
-        Me.txtCentimetres.Location = New System.Drawing.Point(109, 39)
+        Me.txtCentimetres.Location = New System.Drawing.Point(111, 39)
         Me.txtCentimetres.Name = "txtCentimetres"
         Me.txtCentimetres.Size = New System.Drawing.Size(100, 20)
         Me.txtCentimetres.TabIndex = 2
@@ -167,7 +188,7 @@ Partial Class frmMain
         Me.panelMilstoMm.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.panelMilstoMm.Location = New System.Drawing.Point(0, 24)
         Me.panelMilstoMm.Name = "panelMilstoMm"
-        Me.panelMilstoMm.Size = New System.Drawing.Size(212, 66)
+        Me.panelMilstoMm.Size = New System.Drawing.Size(214, 65)
         Me.panelMilstoMm.TabIndex = 4
         '
         'Label5
@@ -178,7 +199,7 @@ Partial Class frmMain
         Me.Label5.ForeColor = System.Drawing.Color.White
         Me.Label5.Location = New System.Drawing.Point(0, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(212, 20)
+        Me.Label5.Size = New System.Drawing.Size(214, 20)
         Me.Label5.TabIndex = 4
         Me.Label5.Text = "Mils to Millimetres"
         Me.Label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -195,7 +216,7 @@ Partial Class frmMain
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(154, 23)
+        Me.Label4.Location = New System.Drawing.Point(156, 23)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(55, 13)
         Me.Label4.TabIndex = 3
@@ -211,7 +232,7 @@ Partial Class frmMain
         '
         'txtMillimetres
         '
-        Me.txtMillimetres.Location = New System.Drawing.Point(109, 39)
+        Me.txtMillimetres.Location = New System.Drawing.Point(111, 39)
         Me.txtMillimetres.Name = "txtMillimetres"
         Me.txtMillimetres.Size = New System.Drawing.Size(100, 20)
         Me.txtMillimetres.TabIndex = 2
@@ -219,9 +240,9 @@ Partial Class frmMain
         'StatusStrip1
         '
         Me.StatusStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.stripAlert})
-        Me.StatusStrip1.Location = New System.Drawing.Point(0, 90)
+        Me.StatusStrip1.Location = New System.Drawing.Point(0, 89)
         Me.StatusStrip1.Name = "StatusStrip1"
-        Me.StatusStrip1.Size = New System.Drawing.Size(212, 22)
+        Me.StatusStrip1.Size = New System.Drawing.Size(214, 22)
         Me.StatusStrip1.SizingGrip = False
         Me.StatusStrip1.TabIndex = 3
         Me.StatusStrip1.Text = "StatusStrip1"
@@ -235,13 +256,14 @@ Partial Class frmMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(212, 112)
+        Me.ClientSize = New System.Drawing.Size(214, 111)
         Me.Controls.Add(Me.panelIntoCm)
         Me.Controls.Add(Me.panelMilstoMm)
         Me.Controls.Add(Me.StatusStrip1)
         Me.Controls.Add(Me.MenuStrip1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
         Me.MainMenuStrip = Me.MenuStrip1
+        Me.MaximumSize = New System.Drawing.Size(230, 150)
         Me.Name = "frmMain"
         Me.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide
         Me.StartPosition = System.Windows.Forms.FormStartPosition.Manual
@@ -279,5 +301,8 @@ Partial Class frmMain
     Friend WithEvents menuMilstoMm As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents Label6 As System.Windows.Forms.Label
     Friend WithEvents Label5 As System.Windows.Forms.Label
+    Friend WithEvents menuShowHistory As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents menuPlaceinCorner As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents menuClearSavedData As System.Windows.Forms.ToolStripMenuItem
 
 End Class

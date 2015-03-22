@@ -8,3 +8,5 @@ d:\documents\visual studio 2013\Projects\Converter\Converter\obj\Debug\Converter
 d:\documents\visual studio 2013\Projects\Converter\Converter\obj\Debug\Converter.exe
 d:\documents\visual studio 2013\Projects\Converter\Converter\obj\Debug\Converter.xml
 d:\documents\visual studio 2013\Projects\Converter\Converter\obj\Debug\Converter.pdb
+d:\documents\visual studio 2013\Projects\Converter\Converter\obj\Debug\Converter.frmHistory.resources
+d:\documents\visual studio 2013\Projects\Converter\Converter\obj\Debug\Converter.vbprojResolveAssemblyReference.cache
